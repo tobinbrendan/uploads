@@ -55,7 +55,8 @@ ui <- fluidPage(
 # Define server logic to summarize and view selected dataset ----
 server <- function(input, output) {
     
-    # Return the requested dataset ----
+    # Return the requested dataset
+    # Includes possible expansions ----
     datasetInput <- reactive({
         switch(input$dataset,
                "Allergies" = allergies,
