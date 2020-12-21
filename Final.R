@@ -85,9 +85,9 @@ server <- function(input, output) {
         
         # Generate a summary of the dataset ----
         output$summary <- renderPrint({
-            dataset <- select(filter(datasetInput(), PATIENT == input$patName),
+            filtData <- select(filter(datasetInput(), PATIENT == input$patName),
                               -PATIENT)
-            summary(dataset)
+            summary(filtData)
         })
 
 }
