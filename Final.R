@@ -22,7 +22,7 @@ ui <- fluidPage(
             # Input: Text for inputting patient ID ----
             textInput(inputId = "patName",
                       label = "Patient ID:",
-                      value = "76982e06-f8b8-4509-9ca3-65a99c8650fe"),
+                      value = "Input Patient ID"),
             br(),
             p(strong("Some IDs for testing purposes:")),
             p("76982e06-f8b8-4509-9ca3-65a99c8650fe"),
